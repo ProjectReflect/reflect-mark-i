@@ -38,7 +38,15 @@ function updateClock() {
 	}
     
     // 12 hour clock
-    if (hour > 12){
+    
+    if (hour == 0){
+    	hour = 12;
+    	document.getElementById("am-pm").innerHTML = "AM";
+    }
+    else if (hour == 12){
+    	document.getElementById("am-pm").innerHTML = "PM";
+    }
+    else if (hour > 12){
         hour = hour-12;
         document.getElementById("am-pm").innerHTML = "PM";
     }
