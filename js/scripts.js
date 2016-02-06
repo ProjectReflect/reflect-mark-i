@@ -28,13 +28,13 @@ function updateClock() {
 	var hour = d.getHours();
     
     if(hour < 12) {
-		document.getElementById("welcome").innerHTML = "Good Morning, Tim!"
-	} else if (hour < 15) {
-		document.getElementById("welcome").innerHTML = "Good Afternoon, Tim!"
+		document.getElementById("welcome").innerHTML = "Good Morning, "+name+"!"
+	} else if (hour < 18) {
+		document.getElementById("welcome").innerHTML = "Good Afternoon, "+name+"!"
 	} else if (hour < 22) {
-		document.getElementById("welcome").innerHTML = "Good Evening, Tim!"
+		document.getElementById("welcome").innerHTML = "Good Evening, "+name+"!"
 	} else {
-		document.getElementById("welcome").innerHTML = "Good Night, Tim!"
+		document.getElementById("welcome").innerHTML = "Good Night, "+name+"!"
 	}
     
     // 12 hour clock
