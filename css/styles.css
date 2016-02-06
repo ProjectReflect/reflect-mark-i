@@ -1,0 +1,141 @@
+@font-face {
+  font-family: DIN;
+  src: url("../fonts/din-light.eot");
+  src: url("../fonts/din-light.eot?#iefix")format("embedded-opentype"), url("../fonts/din-light.woff")format("woff"), url("../fonts/din-light.ttf")format("truetype"), url("../fonts/din-light.svg#DIN")format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: DIN;
+  src: url("../fonts/din-regular.eot");
+  src: url("../fonts/din-regular.eot?#iefix")format("embedded-opentype"), url("../fonts/din-regular.woff")format("woff"), url("../fonts/din-regular.ttf")format("truetype"), url("../fonts/din-regular.svg#DIN")format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: DIN;
+  src: url("../fonts/din-medium.eot");
+  src: url("../fonts/din-medium.eot?#iefix")format("embedded-opentype"), url("../fonts/din-medium.woff")format("woff"), url("../fonts/din-medium.ttf")format("truetype"), url("../fonts/din-medium.svg#DIN")format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: DIN;
+  src: url("../fonts/din-bold.eot");
+  src: url("../fonts/din-bold.eot?#iefix")format("embedded-opentype"), url("../fonts/din-bold.woff")format("woff"), url("../fonts/din-bold.ttf")format("truetype"), url("../fonts/din-bold.svg#DIN")format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: DIN;
+  src: url("../fonts/din-black.eot");
+  src: url("../fonts/din-black.eot?#iefix")format("embedded-opentype"), url("../fonts/din-black.woff")format("woff"), url("../fonts/din-black.ttf")format("truetype"), url("../fonts/din-black.svg#DIN")format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+html, body {
+	background-color: #000;
+	font-family: DIN;
+}
+
+#left {
+	width: 50%;
+	float: left;
+	text-align: right;
+}
+#left h1 {
+	padding-right: 10px;
+	color: #fff;
+}
+
+#right {
+	width: 50%;
+	float: left;
+}
+#right h1 {
+	padding-left: 10px;
+	color: #fff;
+}
+
+#time {
+	padding-left: 430px;
+	margin: 0px;
+	border: 0px;
+	text-align: center;
+	background: #000;
+	margin-top: 5px;
+	color: #fff;
+	font-size: 180px;
+}
+#am-pm{
+	margin: 0px;
+	border: 0px;
+	background: #000;
+	margin-top: 5px;
+	color: #fff;
+	font-size: 40px;
+}
+#date {
+	padding-left: 220px;
+	color: #fff;
+	font-size: 40px;
+	text-align: center;
+	margin: 0px;
+}
+#welcome {
+	padding-left: 220px;
+	color: #fff;
+	font-size: 45px;
+	text-align: center;
+}
+
+#weather {
+	margin-top: 100px;
+}
+#max-min {
+	font-size: 20px;
+}
+#weatherDesc {
+	font-size: 30px;
+}
+#page-1 h1, #page-2 h1 {
+	color: #fff;
+	font-size: 65px;
+	text-align: left;
+}
+#page-1 h2 , #page-2 h2{
+	color: #fff;
+	margin: 0px;
+	font-size: 30px;
+	text-align: left;
+	padding-bottom: 50px;
+}
+
+#page-1 h3 , #page-2 h3{
+	color: #fff;
+	margin: 0px;
+	font-size: 25px;
+	text-align: left;
+	padding-bottom: 10px;
+}
+
+img {
+   -webkit-filter: invert(1);
+   filter: invert(1);
+   position: absolute;
+   width: 200px;
+   opacity: 0.5;
+}
+
+#news {
+	width: 500px;
+}
+
+#news h3 {
+	padding-bottom: 30px;
+}
