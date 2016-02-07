@@ -78,22 +78,31 @@ function updateWeather(){
 updateWeather(); // initial call
 
 //eta
-$.get(server + "/api/eta?userKey="+userKey, function(data, status){
-	var data = JSON.parse(data);
-	document.getElementById("eta").innerHTML = data.routes[0].legs[0].duration.text;
-    document.getElementById("etaHeading").innerHTML = "ETA [TO WORK]";
-});
+function updateEta(){
+	$.get(server + "/api/eta?userKey="+userKey, function(data, status){
+		var data = JSON.parse(data);
+		document.getElementById("eta").innerHTML = data.routes[0].legs[0].duration.text;
+	    document.getElementById("etaHeading").innerHTML = "ETA [TO WORK]";
+	});
+	// call this function again
+    setTimeout(updateEta, 1200000);
+}
+updateEta();
 
 //news
-$.get(server + "/api/news?userKey="+userKey, function(data, status){
-	var jsonObj = JSON.parse(data);
-	console.log(jsonObj);
-	document.getElementById("news1").innerHTML = jsonObj[0].title;
-	document.getElementById("news2").innerHTML = jsonObj[1].title;
-	document.getElementById("news3").innerHTML = jsonObj[2].title;
-    document.getElementById("newsHeading").innerHTML = "NEWS";
-});
- 
+function updateNews(){
+	$.get(server + "/api/news?userKey="+userKey, function(data, status){
+		var jsonObj = JSON.parse(data);
+		console.log(jsonObj);
+		document.getElementById("news1").innerHTML = jsonObj[0].title;
+		document.getElementById("news2").innerHTML = jsonObj[1].title;
+		document.getElementById("news3").innerHTML = jsonObj[2].title;
+	    document.getElementById("newsHeading").innerHTML = "NEWS";
+	});
+	// call this function again
+    setTimeout(updateNews, 1200000);
+}
+updateNews();
  
  
  
