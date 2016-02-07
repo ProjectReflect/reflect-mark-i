@@ -63,7 +63,7 @@ html, body {
 }
 
 #time {
-	padding-left: 430px;
+	padding-left: 400px;
 	margin: 0px;
 	border: 0px;
 	text-align: center;
@@ -129,7 +129,7 @@ img {
    filter: invert(1);
    position: absolute;
    width: 200px;
-   opacity: 0.5;
+   opacity: 0.8;
 }
 
 #news {
