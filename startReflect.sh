@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd ~/reflect-mark-I/
+cd ~/reflect-mark-i/
 git stash
 git pull
 git stash pop
