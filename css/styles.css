@@ -63,9 +63,7 @@ html, body {
 }
 
 #time {
-	padding-left: 400px;
-	margin: 0px;
-	border: 0px;
+	padding-left: 280px;
 	text-align: center;
 	background: #000;
 	padding-top: 5px;
@@ -73,11 +71,9 @@ html, body {
 	font-size: 180px;
 }
 #am-pm{
-	margin: 0px;
-	border: 0px;
 	background: #000;
-	margin-top: 5px;
 	color: #fff;
+	text-align: center;
 	font-size: 40px;
 }
 #date {
