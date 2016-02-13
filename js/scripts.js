@@ -63,7 +63,8 @@ updateClock(); // initial call
 
  //weather
 function updateWeather(){
-    $.get("http://api.openweathermap.org/data/2.5/weather?lat=43.4667&lon=-80.5167&appid="+ owmKey, function(data, status){
+	//"http://api.openweathermap.org/data/2.5/weather?lat=43.4667&lon=-80.5167&appid="
+    $.get("http://api.openweathermap.org/data/2.5/weather?lat=43.8102&lon=-79.3268&appid="+ owmKey, function(data, status){
         document.getElementById("temperature").innerHTML = (Math.round( (data.main.temp - 273.15) * 10)/10) + "°C";
         var minTemp = Math.round( (data.main.temp_min-273.15) * 10)/10;
         var maxTemp = Math.round( (data.main.temp_max-273.15) * 10)/10;
