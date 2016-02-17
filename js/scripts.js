@@ -65,6 +65,7 @@ updateClock(); // initial call
 function updateWeather(){
     $.get(server + "/api/weather?userKey="+userKey, function(data, status){
     	var data = JSON.parse(data);
+
         document.getElementById("temperature").innerHTML = (Math.round( (data.main.temp - 273.15) * 10)/10) + "°C";
         var minTemp = Math.round( (data.main.temp_min-273.15) * 10)/10;
         var maxTemp = Math.round( (data.main.temp_max-273.15) * 10)/10;
