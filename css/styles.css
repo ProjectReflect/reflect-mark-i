@@ -120,6 +120,13 @@ html, body {
 	padding-bottom: 10px;
 }
 
+#page-1 h4 , #page-2 h4{
+	color: #f7f7f7;
+	margin: 0px;
+	font-size: 20px;
+	text-align: left; 
+}
+
 img {
    -webkit-filter: invert(1);
    filter: invert(1);

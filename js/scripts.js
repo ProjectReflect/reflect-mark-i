@@ -69,10 +69,11 @@ function updateWeather(){
         document.getElementById("temperature").innerHTML = (Math.round( (data.main.temp - 273.15) * 10)/10) + "°C";
         var minTemp = Math.round( (data.main.temp_min-273.15) * 10)/10;
         var maxTemp = Math.round( (data.main.temp_max-273.15) * 10)/10;
-        //document.getElementById("max-min").innerHTML = "  "+ minTemp + "°|" + maxTemp+"°";
+        
         console.log(data + " " + status);
         document.getElementById("weatherDesc").innerHTML = data.weather[0].description;
         document.getElementById("city").innerHTML = data.name;
+        document.getElementById("tempMoreInfo").innerHTML = "HIGH: "+ maxTemp + "°C | LOW: " + minTemp + "°C";
     });
     // call this function again
     setTimeout(updateWeather, 1200000);
